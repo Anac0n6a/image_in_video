@@ -71,7 +71,7 @@ def generate_subtitles(subtitle_file, video_duration, video_size, font_path, yel
     
     def generator(txt):
         color = 'yellow' if any(keyword in txt for keyword in yellow_keywords) else 'white'
-        return TextClip(txt, font=font_path, fontsize=100, color=color, size=video_size, method='caption', stroke_color='black', stroke_width=5).set_position(('center', 'bottom'))
+        return TextClip(txt, font=font_path, fontsize=100, color=color, size=video_size, method='caption', stroke_color='black', stroke_width=10).set_position(('center', 'bottom'))
     
     subtitles = SubtitlesClip(subtitle_file, generator)
     return subtitles.set_duration(video_duration)
@@ -133,9 +133,9 @@ def create_video(image_folder, audio_file, api_key, font_path, output):
     final_video.write_videofile(output, fps=24)
 
 # Paths to image folder, audio file, font, and output video file
-image_folder = 'images1'
-audio_file = 'story1_audio.mp3'
-font_path = 'UnBPro-Black/unb-office_bold-italic.ttf'  # Update this to the correct path
+image_folder = 'tim-image0/image'
+audio_file = 'tim-image0/tim-output.mp3'
+font_path = 'UnBPro-Black/unb_pro_black.otf'  # Update this to the correct path
 output_file = 'output_video_with_subtitles.mp4'
 api_key = "afb28e1fd25a4b089df34a6b3c3ff726"  # your api_key for assemblyai
 

@@ -4,6 +4,8 @@ check_srt.py
 *.txt
 *.srt
 */
+!fast-whoosh-118248.mp3
+!/UnBPro-Black
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
