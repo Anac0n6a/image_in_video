@@ -137,6 +137,6 @@ image_folder = 'images1'
 audio_file = 'story1_audio.mp3'
 font_path = 'UnBPro-Black/unb-office_bold-italic.ttf'  # Update this to the correct path
 output_file = 'output_video_with_subtitles.mp4'
-api_key = "afb28e1fd25a4b089df34a6b3c3ff726"  # your api_key for assemblyai
+api_key = "your_api_key"  # your api_key for assemblyai
 
 create_video(image_folder, audio_file, api_key, font_path, output_file)
