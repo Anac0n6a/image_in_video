@@ -22,8 +22,12 @@ This script, `script_video.py`, allows you to generate a video montage from a fo
     ```bash
     pip3 install moviepy
     ```
+4. **Then set this to create video subtitles**
+    ```bash
+    pip install assemblyai
+    ```
 
-4. **Install ffmpeg**: The script utilizes ffmpeg for video processing. Install it using apt.
+5. **Install ffmpeg**: The script utilizes ffmpeg for video processing. Install it using apt.
     ```bash
     sudo apt install ffmpeg
     ```
@@ -39,36 +43,22 @@ This script, `script_video.py`, allows you to generate a video montage from a fo
    - `subtitle_file`: Path to the subtitle file.
    - `output_file`: Path for the output video file.
 
-3. **Run the script**: Execute the script in your terminal.
+3. **Run the script**: Execute the script in your terminal.**
     ```bash
     python3 script_video.py
     ```
+4. **in the generate_subtitles function, find the yellow_keywords dictionary and fill in those words according to the example that you need to become yellow**
+    ```bash
+    yellow_keywords = ['Henry', 'flowers', 'child']
+    ```
+    And this will make the entire subtitle sentence yellow where the found word is
 
-4. **Wait for completion**: The script will generate the video with subtitles. The progress will be displayed in the terminal.
+5. **Wait for completion**: The script will generate the video with subtitles. The progress will be displayed in the terminal.
 
-5. **Find your video**: Once the script completes, you'll find your video ready at the specified output path.
+6. **Find your video**: Once the script completes, you'll find your video ready at the specified output path.
 
-### Creating the srt file
-**Using AI to Help Create Subtitles**:
-  - I used this service and it converted for me from mp3 to srt `https://studio.wavel.ai/` But you can use any other one you find
-  - The main thing is that the srt file looks something like this:
-```
-1
-00:00:00,080 --> 00:00:02,400
-In a vast mountain range, an aging
-
-2
-00:00:02,400 --> 00:00:04,240
-eagle realized it had to make a crucial
-
-3
-00:00:04,240 --> 00:00:06,000
-decision to ensure its survival.
-
-4
-00:00:06,400 --> 00:00:09,400
-Its beak was bent, talons weak, and feathers
-```
+### how to get assemblyai token?
+**you need to go to the website https://www.assemblyai.com/ and log in there, then go to https://www.assemblyai.com/app and your api key will be indicated there**
 
 
 ### Additional Notes
