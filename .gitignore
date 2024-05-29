@@ -1,3 +1,10 @@
+check_srt.py
+*.mp4
+*.mp3
+*.txt
+*.srt
+*/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
